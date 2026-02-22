@@ -43,7 +43,6 @@ body {
 }
 
 
-/* Hover Effects */
 .side-nav a:hover {
     filter: invert(1) opacity(1);
 }
@@ -55,15 +54,14 @@ body {
     justify-content: center;
     text-align: left;
     position: relative;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
 }
 
 .header-card {
     background-color: #ffffff;
     padding: 2.5rem;
-    max-width: 58rem;
     width: 90%;
-    margin: 3.5rem auto;
+    margin: 3.5rem auto 0;
     border-radius: 0.4rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
@@ -107,23 +105,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-.cta-text {
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-    font-weight: 300;
-    color: #ffffff;
-    text-align: left;
-    font-family: "Zain", sans-serif;
-    line-height: 1.8;
-    max-width: 50rem;
-    letter-spacing: 0.02em;
-}
-
-.cta-button:hover {
-    background-color: #028060;
-}
-
-/* ── Gallery Section ── */
 .gallery {
     margin: 3rem 0;
     padding: 3rem 0;
@@ -172,7 +153,6 @@ body {
     text-transform: uppercase;
 }
 
-/* ── Museum Wall ── */
 .museum-wall {
     display: flex;
     flex-wrap: wrap;
@@ -182,7 +162,6 @@ body {
     align-items: flex-start;
 }
 
-/* ── Individual Artwork ── */
 .artwork {
     display: flex;
     flex-direction: column;
@@ -192,24 +171,7 @@ body {
     max-width: 320px;
 }
 
-/* ── Spotlight Glow (No Fixture) ── */
-.spotlight {
-    position: absolute;
-    top: -35%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 450px;
-    height: 600px;
-    /* Soft elliptical glow */
-    background: radial-gradient(ellipse at center,
-            rgba(255, 245, 215, 0.466) 0%,
-            rgba(255, 245, 215, 0.15) 40%,
-            transparent 60%);
-    pointer-events: none;
-    z-index: 3;
-}
 
-/* ── Frame ── */
 .frame {
     background: #2c2420;
     padding: 12px;
@@ -238,7 +200,6 @@ body {
     border: 4px solid #f5f0e8;
 }
 
-/* ── Wall Plaque ── */
 .plaque {
     margin-top: 1.2rem;
     background: linear-gradient(135deg, #f8f4ec 0%, #ece5d8 100%);
@@ -267,7 +228,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* ── Responsive ── */
 @media (max-width: 768px) {
     .museum-wall {
         gap: 2.5rem;
@@ -283,60 +243,49 @@ body {
     }
 }
 
-/* ── Call to Action ── */
-.call-to-action-card {
-    background-color: #ffffff;
-    padding: 3rem;
-    max-width: 38rem;
-    width: 90%;
-    margin: 4rem auto;
-    border-radius: 0.4rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    /* More subtle shadow */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-}
 
-.cta-button {
+.cta-trapezoid {
+    display: inline-block;
+    position: relative;
+    /* align left edge with hero's left corner (hero is 90% width, auto margins) */
+    margin: 0 0 2rem 5%;
+    padding: 1rem 2.5rem;
     background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 0.75rem 2.5rem;
-    border: 1px solid #1a1a1a;
-    border-radius: 0.2rem;
+    color: #fff;
     text-decoration: none;
-    font-weight: 400;
     font-size: 0.9rem;
+    font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    display: inline-block;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #ffffff;
+.cta-trapezoid:hover {
+    background-color: #fff;
     color: #1a1a1a;
-    transform: none;
-    box-shadow: none;
+}
+
+.hero {
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .cta-trapezoid {
+        position: static;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+        margin: 2rem auto 0;
+        display: block;
+    }
 }
 
 .qr-code {
-    width: 7rem;
-    height: 7rem;
-    object-fit: contain;
-    filter: grayscale(1);
-    /* Ensure monochromatic look */
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
 }
 
 .qr-code:hover {
     opacity: 1;
 }
 
-/* ── Review Section ── */
 .review {
     background-color: #ffffff;
     padding: 2.5rem;
@@ -349,7 +298,6 @@ body {
     text-align: center;
 }
 
-/* ── Contact Section ── */
 .contact-card {
     background-color: #ffffff;
     padding: 3rem;
@@ -416,14 +364,14 @@ body {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
-    /* Wider spacing for a cleaner look */
+
     margin-top: 1.5rem;
 }
 
 .social-link {
     display: flex;
     flex-direction: column;
-    /* Icon over text look */
+
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
