@@ -8,6 +8,12 @@ Evelina is a Moldova painers who specializes on oil paiting. She has more than 6
 
 The landing page is avaliable [here permanently](https://timurcravtov.github.io/WebProgrammingLab2/) and [here, with custom domain](https://evelinastudio.site)
 
+## Mascot
+
+He's called Rainbow (the name hasn't been negotiated with the client)
+
+<img src="assets/logo/mascot.png" alt="Mascot" />
+
 ## Demonstrations
 
 The inspiration is taken from real museum [here](inspo.png)
