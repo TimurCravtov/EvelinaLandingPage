@@ -46,7 +46,8 @@ body {
 .side-nav a:hover {
     filter: invert(1) opacity(1);
 }
-
+/* Now we use tailwind for hero*/
+/*
 .hero {
     display: flex;
     flex-direction: column;
@@ -104,6 +105,7 @@ body {
     max-width: 50rem;
     letter-spacing: 0.02em;
 }
+*/
 
 .gallery {
     margin: 3rem 0;
