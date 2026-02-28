@@ -1,18 +1,18 @@
-# The landing page for Evelina, the paiter
+# The landing page for Evelina, the painter
 
 ## About
 
-Evelina is a Moldova painers who specializes on oil paiting. She has more than 6 years of experience of paiting. 
+Evelina is a Moldova painter who specializes on oil painting. She has more than 6 years of experience of painting. 
 
 ## Access
 
-The landing page is avaliable [here permanently](https://timurcravtov.github.io/WebProgrammingLab2/) and [here, with custom domain](https://evelinastudio.site)
+The landing page is avaliable [here permanently](https://timurcravtov.github.io/EvelinaLandingPage/) and [here, with custom domain](https://evelinastudio.site)
 
 ## Mascot
 
 He's called Rainbow (the name hasn't been negotiated with the client)
 
-<img src="assets/logo/mascot.png" alt="Mascot" />
+<img src="assets/logo/mascot.png" width="200" alt="Mascot" />
 
 ## Demonstrations
 
@@ -28,3 +28,11 @@ The inspiration is taken from real museum [here](inspo.png)
 
 #### Reviews and Contacts
 <img src="assets/demo/reviews+contacts.png" alt="Reviews+Contacts" />
+
+#### Mascot
+
+<img src="assets/demo/mascot.png" alt="Mascot" />
+
+#### Mobile view
+
+<img src="assets/demo/mobile-view.png" alt="Mobile" />
