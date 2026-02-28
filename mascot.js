@@ -5,9 +5,10 @@
  */
 
 class Mascot {
-    constructor() {
+    constructor(appearanceDelay = 5000) {
         this.mascot = document.getElementById('site-mascot');
         this.info = document.getElementById('mascot-info');
+        this.appearanceDelay = appearanceDelay;
 
         if (!this.mascot) return;
 
@@ -18,7 +19,7 @@ class Mascot {
         // Delayed appearance
         setTimeout(() => {
             this.show();
-        }, 5000);
+        }, this.appearanceDelay);
 
         // Interaction listeners
         this.mascot.addEventListener('mouseenter', () => this.showInfo());
@@ -50,5 +51,5 @@ class Mascot {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new Mascot();
+    new Mascot(4000);
 });
