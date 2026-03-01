@@ -2,7 +2,7 @@
   "title": "Evelina :: the Artist",
   "heroName": "Evelina",
   "heroTagline": "The Authentic Artist from Moldova",
-  "heroDescription": "Evelina is a passionate artist who brings her unique vision to every canvas. She captures the essence of nature and human emotion in her paintings. Her experience include more than 6 years of professional artistry. All her paintings are oil on canvas.",
+  "heroDescription": "Evelina is a passionate artist who brings her unique vision to every canvas. She captures the essence of nature and human emotion in her paintings. Her experience include more than 6 years of professional artistry. All her paintings are oil on canvas.\n\nTest",
   "ctaText": "Order a painting or view more works",
   "ctaLink": "https://www.instagram.com/eveline.art/",
   "gallerySectionTitle": "Gallery",
@@ -60,7 +60,7 @@
     {
       "label": "Instagram",
       "url": "https://www.instagram.com/eveline.art/",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png"
+      "icon": "/pictureshttps://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png"
     }
   ],
   "mascotMessage": "Hi! You are curious one? :)"
