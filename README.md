@@ -62,5 +62,7 @@ Runs `tinacms build` then `astro build`. Output goes to `dist/`.
 
 #### Preview production build
 ```bash
+npm run build
 npm run preview
 ```
+> **Note:** You must run `npm run build` before `npm run preview`. The preview server serves files from the `dist/` folder, so without a fresh build, assets (like the favicon) may be missing or outdated.
