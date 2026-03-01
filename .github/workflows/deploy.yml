@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -17,15 +17,19 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+      TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
           cache: npm
       - uses: actions/configure-pages@v4
       - run: npm ci
-      - run: npm run build
+      - run: npx tinacms build
+      - run: npx astro build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist

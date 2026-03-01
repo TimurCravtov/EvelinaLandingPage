@@ -2,3 +2,9 @@ node_modules/
 dist/
 build/
 .astro/
+
+tina/__generated__/
+
+
+node_modules
+.env
