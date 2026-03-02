@@ -60,7 +60,7 @@
     {
       "label": "Instagram",
       "url": "https://www.instagram.com/eveline.art/",
-      "icon": "/pictureshttps://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png"
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png"
     }
   ],
   "mascotMessage": "Hi! You are curious one? :)"

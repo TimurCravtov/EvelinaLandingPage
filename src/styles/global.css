@@ -29,3 +29,10 @@
     @apply absolute inset-[6px] border border-white/10 pointer-events-none;
   }
 }
+
+/* pause mascot spin on hover/focus (fallback for Tailwind variants) */
+#site-mascot:hover .animate-mascot-spin,
+#site-mascot:focus .animate-mascot-spin {
+  animation-play-state: paused;
+}
+

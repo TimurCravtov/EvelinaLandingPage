@@ -19,5 +19,13 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    'group-hover/mascot:pause',
+    'group-focus/mascot:pause',
+    'group-hover/mascot:rotate-0',
+    'group-hover/mascot:scale-[1.02]',
+    'group-focus/mascot:rotate-0',
+    'group-focus/mascot:scale-[1.02]'
+  ],
   plugins: [],
 };
